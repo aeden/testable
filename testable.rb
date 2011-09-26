@@ -6,7 +6,7 @@ module Testable
     to_test << mod 
   end
   def self.run
-    @to_test.each do |c|
+    to_test.each do |c|
       o = c.new
       o.methods.grep(/^_test/).each do |m|
         o.send(m)
