@@ -12,9 +12,10 @@ module Testable
         o.send(m)
       end
     end
+    puts
   end
 
   def assert(result)
-    puts result ? "T" : "F"
+    print result ? "." : "F"
   end
 end
